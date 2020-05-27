@@ -1,0 +1,5 @@
+---
+username: ansible
+password: P@$$w0rd12345#
+vmsize: Standard_DS1_v2
+resource: ansibleresource

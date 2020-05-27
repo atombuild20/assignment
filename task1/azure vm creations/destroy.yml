@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+  vars_files:
+    - var.yml
+    - vms.yml
+  tasks:
+    - name: Include a destroyplay
+      include: vmdestroy.yml

@@ -1,0 +1,7 @@
+Problem:
+The user identity is not set properly
+
+Solution:
+In IIS --> go to application pools --> in the server find the application pool for the default site -->select  and go to advanced settings ,select the identity and change the user to Localsystem.If any user added means we want add that username and password
+
+Then click the applicationpool and select Recycle to restart .

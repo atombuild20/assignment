@@ -1,0 +1,11 @@
+Problem:
+There is no port 6379 open for redis in the server.
+
+Solution:
+Allow firewall rules
+1.switch to root and use "ufw allow 6379/tcp"
+2.check with "ufw status numbered"
+3.restart the redis server " systemctl restart redis.service"
+4.Check the listen port " ss -ntl"
+5.check with redis-cli ping and we get PONG
+
